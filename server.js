@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const notes = require('./db/db.json')
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const file = './db/db.json';
 
@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Sets the homepage to the index file
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/index.html'));
+app.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/notes.html'));
 });
 
 // Gets for the notes from the database
