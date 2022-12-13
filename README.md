@@ -25,9 +25,9 @@ npm i
 
 It is quite intuitive. Why not just give it a try?
 
-Below is a demonstration of the application: 
+Below is a screenshot of the application: 
 
-![Alt Text for Placeholder](https://via.placeholder.com/150)
+![Screenshot of the notes page of the Notate That app](./images/notate-that-screenshot.png)
 
 ## License
 
